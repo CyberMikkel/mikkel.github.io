@@ -3,12 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <title>Min side</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 40px;
+      margin: 0;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #444;
+    }
+
+    p {
+      color: #555;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
+
+  <nav>
+    <a href="#">Forside</a>
+    <a href="#om">Om mig</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
   <h1>Mit billede</h1>
-  <button onclick="alert('Hej!')">Klik mig</button>
-<p>det her er min hjemmeside wauww</p>
-  <img src="Skærmbillede 2026-02-26 144055.png" width="300">
+
+  <button onclick="skiftTekst()">Klik mig</button>
+
+  <p id="tekst">Hej 👋 det her er min hjemmeside wauww</p>
+
+  <!-- Husk at omdøbe dit billede til fx "screenshot.png" -->
+  <img src="screenshot.png" alt="Mit billede">
+
+  <h2 id="om">Om mig</h2>
+  <p>Jeg er ved at lære at lave hjemmesider med HTML, CSS og JavaScript.</p>
+
+  <h2 id="kontakt">Kontakt</h2>
+  <p>Email: dinmail@example.com</p>
+
+  <footer>
+    © 2026 Min hjemmeside
+  </footer>
+
+  <script>
+    function skiftTekst() {
+      document.getElementById("tekst").innerText =
+        "Du klikkede på knappen! 🎉";
+    }
+  </script>
 
 </body>
 </html>
